@@ -1,0 +1,169 @@
+/* css/style.css */
+
+/* ── BRAND COLORS ─────────────────────────── */
+:root {
+  --wl-navy:   #0f4c75;
+  --wl-blue:   #1a8fe3;
+  --wl-light:  #e8f4fd;
+  --wl-accent: #0d7377;
+}
+
+/* ── NAVBAR ───────────────────────────────── */
+.wl-navbar { background: var(--wl-navy); }
+
+.wl-logo-box {
+  width: 32px; height: 32px;
+  background: #fff;
+  color: var(--wl-navy);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+/* ── AVATAR ───────────────────────────────── */
+.wl-avatar-sm {
+  width: 34px; height: 34px;
+  background: var(--wl-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+}
+.wl-avatar-lg {
+  width: 72px; height: 72px;
+  background: var(--wl-navy);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.wl-avatar-md {
+  width: 46px; height: 46px;
+  background: var(--wl-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* ── LOGO TILE (job card) ─────────────────── */
+.wl-job-logo {
+  width: 48px; height: 48px;
+  background: var(--wl-light);
+  color: var(--wl-navy);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* ── CARDS ────────────────────────────────── */
+.wl-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  transition: box-shadow .2s;
+}
+.wl-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+
+/* ── PROFILE BANNER ──────────────────────── */
+.wl-profile-banner {
+  height: 90px;
+  background: linear-gradient(135deg, var(--wl-navy) 0%, var(--wl-blue) 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+/* ── STATUS BADGES ────────────────────────── */
+.badge-applied      { background:#e0f2fe; color:#0369a1; }
+.badge-under-review { background:#fef9c3; color:#854d0e; }
+.badge-interview    { background:#ede9fe; color:#5b21b6; }
+.badge-offered      { background:#dcfce7; color:#166534; }
+.badge-rejected     { background:#fee2e2; color:#991b1b; }
+
+/* ── SIDEBAR STAT ─────────────────────────── */
+.wl-stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--wl-navy);
+}
+
+/* ── HERO (auth pages) ────────────────────── */
+.wl-hero {
+  background: linear-gradient(160deg, var(--wl-navy) 0%, var(--wl-blue) 60%, var(--wl-accent) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 56px;
+}
+
+/* ── AUTH CARD ────────────────────────────── */
+.wl-auth-card {
+  max-width: 440px;
+  width: 100%;
+}
+
+/* ── FORM FOCUS ───────────────────────────── */
+.form-control:focus, .form-select:focus {
+  border-color: var(--wl-blue);
+  box-shadow: 0 0 0 .2rem rgba(26,143,227,.2);
+}
+
+/* ── PRIMARY BUTTON ──────────────────────── */
+.btn-wl {
+  background: var(--wl-navy);
+  color: #fff;
+  border: none;
+}
+.btn-wl:hover { background: #0d3f61; color: #fff; }
+
+/* ── FOOTER ──────────────────────────────── */
+.wl-footer { border-top: 1px solid #e2e8f0; background: #fff; }
+
+/* ── SKILL TAG ────────────────────────────── */
+.wl-tag {
+  display: inline-block;
+  background: var(--wl-light);
+  color: var(--wl-navy);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ── DEMO HINT BOX ───────────────────────── */
+.wl-demo-box {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* ── STAT CARD ────────────────────────────── */
+.wl-stat-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  padding: 22px;
+}
+.wl-stat-card .stat-icon { font-size: 2rem; }
+.wl-stat-card .stat-val  { font-size: 2rem; font-weight: 800; color: var(--wl-navy); }
+.wl-stat-card .stat-lbl  { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: .05em; }
